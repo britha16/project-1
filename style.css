@@ -1,3 +1,66 @@
-h3{
-    color: blue;
+body{
+    font-family: " Arial" , sans-serif ;
+    background-color: plum;
+    color:beige;
+}
+ h1 
+ {
+    color:brown;
+ }
+ a{
+    color:azure;
+    text-decoration: none;
+ }
+ a :hover {
+    color:bisque;
+ }
+ul  > li {
+    font-weight:bold;
+}
+h1+p{
+    background-color:black;
+    padding: 40px;
+    border-radius: 25px;
+}
+ul li:hover{
+    color:blanchedalmond;
+}
+l li:nth-child(3) {
+
+background-color: #21262D;
+
+}
+
+/* :not(selector) Pseudo-class */
+
+p:not(:first-of-type) {
+
+text-decoration: underline;
+
+}
+
+/* ::before Pseudo-element */
+
+ul li::before {
+
+content: "";
+
+}
+
+/* ::after Pseudo-element */
+
+a::after {
+
+content: "";
+
+}
+
+/* ::first-letter Pseudo-element */
+
+p::first-letter {
+
+font-size: 200%;
+
+color: #FF7B72;
+
 }
