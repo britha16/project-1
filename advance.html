@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+  
+    <title>Advance selectors</title>
+    <style>
+input[type="text"] {
+    border: 2px solid blue;
+}
+input[type="password"] {
+    border: 2px solid green;
+}
+ div >p {
+    color:pink;
+ }
+  button:hover{
+    background-color: aquamarine;
+  }
+   li:nth-child(3){
+     color:antiquewhite;
+   }
+   p::first-letter{
+      font-size:20px;
+      color:peachpuff;
+   }
+   h1::before{
+    content:"Hello";
+     } 
+     h1::After{
+        content:"bye";
+     }
+</style>
+</head>
+<body>
+    <!--Attributes selectors-->
+    <input type="text" placeholder="Text Input">
+    <input type="password" placeholder="Password">
+     
+    <!--Decendent selectors-->
+    <!--
+       <div> 
+        <p> This will turn into green </p>
+       </div>
+       <p> This will not turn into green</p> -->
+
+       <!-- Child selectors-->
+        <div>
+            <p> Direct child (pink)</p>
+            <span>
+                <p> Not direct child</p>
+            </span>
+        </div>
+
+        <!-- Pseudo classes-->
+         <button> Click me</button>
+         <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li> Item 3</li>
+            <li>Item 4</li>
+         </ul> 
+
+        <!-- <h1>Welcome</h1>
+         <p>Happy birthday to virat</p>-->
+
+    
+</body>
+</html>
